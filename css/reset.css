@@ -1,0 +1,8 @@
+@charset 'utf-8';
+html,body{font-size:14px;color:#000000;line-height:1.8rem;}
+html,body,h1,h2,h3,h4,h5,h6,p,div,span,ul,ol,li,img,a,hr,br,input,select,button,form,fieldset,label{margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+input,button,select,a{outline:none;}
+img{vertical-align:top;}
+ul,ol,li{list-style:none;}
+a{text-decoration:none;color:#000000;}
