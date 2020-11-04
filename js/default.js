@@ -26,10 +26,12 @@ $('.lang>a').on('click',function(){
 
 // 메인네비 클릭
 $('.main_nav>li>a').on('click',function(){
-  $('.main_nav>li>a').removeClass('active');
-  $('.main_nav>li>a').next().css('display','none');
-  $(this).addClass('active');
-  $(this).next().css('display','block');
-
+  if($(this).hasClass('active')){
+    $(this).removeClass('active');
+    $(this).next().slideUp(300);
+  }else{
+    $(this).addClass('active');
+    $(this).next().slideDown(300);
+  }
 })
 
