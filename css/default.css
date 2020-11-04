@@ -16,7 +16,8 @@
 .skip_menu a:focus,.skip_menu a:hover{border-color:#000;color:#000;}
 
 /* 해더섹션 */
-.header{padding:24px 0;position:fixed;left:0;top:0;z-index:9;width:100%;}
+.header{padding:24px 0;position:fixed;left:0;top:0;z-index:9;width:100%;border-bottom:1px solid #aaa;}
+.header.active{background:#fff;}
 .header_top{position:relative;z-index:9;}
 .logo_box{float:left;}
 .logo_box img{width:100px;}
@@ -49,27 +50,40 @@
 .nav_link .sns a{display:inline-block;width:40px;margin-left:10px;}
 .nav_link .sns img{width:100%;}
 
+.main_section{height:3000px;background:#007dc6;}
+
 /* ===================테블릿 스타일====================== */
 @media(min-width:768px){
   .header .container{display:flex;justify-content:space-between;}
-
   .tgl_btn{display:none;}
-  .nav{position:static;overflow:hidden;padding:0;transition:0s;}
+  .nav{position:static;overflow:hidden;padding:0;background-color:transparent;}
   .lang,.nav_link,.main_nav>li>a::before,.main_nav>li>a::after{display:none;}
-  .main_nav{margin:0;border-bottom:none;display:flex;justify-content:flex-end;}
+  .main_nav{margin:5px 0 0 0;border-bottom:none;display:flex;justify-content:flex-end;}
   .main_nav>li{margin:0 0 0 20px;}
   .main_nav>li>a{font-size:1.2rem;}
-  .sub_nav{display:none;padding:0;}
-  .sub_nav li{margin-left:0;}
+  .main_nav>li>a.active{color:#000;}
+  .sub_nav{width:100%;padding:0;position:absolute;left:41%;top:100%;}
+  .main_nav>li:nth-child(3)>.sub_nav{left:53%;}
+  .main_nav>li:nth-child(4)>.sub_nav{left:52%;}
+  .main_nav>li:nth-child(5)>.sub_nav{left:65%}
+  .main_nav>li:nth-child(6)>.sub_nav{left:81%}
+  .sub_nav li{margin:14px;display:inline-block;}
   .sub_nav a{font-size:1rem;}
   
+  /* section */
+  .main_section{margin-top:140px;}
 }
 @media(min-width:960px){
   .nav{display:flex;justify-content:flex-end;align-items:center;}
+  .main_nav>li:nth-child(3)>.sub_nav{left:46%;}
+  .main_nav>li:nth-child(4)>.sub_nav{left:55%;}
+  .main_nav>li:nth-child(5)>.sub_nav{left:65%}
+  .main_nav>li:nth-child(6)>.sub_nav{left:67%}
   .nav_link{display:block;margin-left:3rem;}
   .nav_link .customer{font-size:1rem;padding-top:5px;}
   .nav_link .sns{padding-top:2px;}
   .nav_link .sns a{width:30px;}
+  
 }
 
 
@@ -86,6 +100,8 @@
   .lang a:first-child{display:none;}
   .lang a:last-child{display:block;width:30px;height:30px;margin-top:6px;padding:0;border-radius:15px;background:#888;font-size:0.8rem;text-align:center;line-height:30px;color:#fff;}
   .main_nav{order:1;}
+  .sub_nav{transition:.3s;}
+  .main_nav li:hover .sub_nav{display:block;}
   .nav_link{order:2;}
 
   
