@@ -53,6 +53,16 @@ function closeSub(){
   $('.main_nav>li>a').removeClass('active');
   $('.main_nav>li>a').next().slideUp();
 };
+//모바일 서브메뉴 호출/닫기
+// function moSub(self){
+//   if($(self).hasClass('active')){
+//     $(self).removeClass('active');
+//     $(self).next().slideUp(300);
+//   }else{
+//     $(self).addClass('active');
+//     $(self).next().slideDown(300);
+//   };
+// }
 
 //문서 해드 스크롤
 $(document).on('scroll',function(){
@@ -65,17 +75,13 @@ $(document).on('scroll',function(){
   }
 });
 
+//내비 가로 좌표
+$('.main_nav>li').hover(function(){
+  var navOffset = $(this).offset().left;
+  $(this).children('.sub_nav').css('left',navOffset);
+});
 
 
 
-//모바일 서브메뉴 호출/닫기
-// function moSub(self){
-//   if($(self).hasClass('active')){
-//     $(self).removeClass('active');
-//     $(self).next().slideUp(300);
-//   }else{
-//     $(self).addClass('active');
-//     $(self).next().slideDown(300);
-//   };
-// }
+
 
