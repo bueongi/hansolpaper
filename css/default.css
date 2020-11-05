@@ -51,7 +51,7 @@
 .nav_link .sns a{display:inline-block;width:40px;margin-left:10px;}
 .nav_link .sns img{width:100%;}
 
-.main_section{height:3000px;background:#007dc6;}
+.main_section{}
 
 /* ===================테블릿 스타일====================== */
 @media(min-width:768px){
