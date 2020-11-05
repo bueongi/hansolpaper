@@ -81,6 +81,15 @@ $('.main_nav>li').hover(function(){
   $(this).children('.sub_nav').css('left',navOffset);
 });
 
+var masterSlider = new Swiper('.main_slider',{
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable:true,
+  },
+});
+var slaveSlider = new Swiper('.papers_slider');
+
 
 
 
