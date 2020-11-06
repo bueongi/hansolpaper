@@ -7,6 +7,7 @@
   font-family:Roboto,'Noto Sans KR',sans-serif;
 }
 .clearfix::after{content:'';display:block;clear: both;}
+.wrap>.section{margin-bottom:50px;}
 .container{width:100%;max-width:1280px;margin:0 auto;padding:0 40px;}
 
 /* 스킵메뉴 */
@@ -58,11 +59,19 @@
 .main_slider .swiper-pagination-bullets .swiper-pagination-bullet{width:18%;height:3px;margin:0;border-radius:0;}
 .main_slider .swiper-pagination-bullet-active{background:#000;}
 
-.papers_slider picture img{width:100%;}
-.papers_slider .swiper-button-prev,.papers_slider .swiper-button-next{top:70%;color:#ccc;}
+.papers_section{}
+.papers_slider .papers_slide{position:relative;height:1000px;}
+.papers_slide .papers_tit{position:absolute;left:0;top:0;z-index:2;}
+.papers_tit h2{font-weight:700;font-size:4rem;line-height:4.5rem;}
+.papers_slide .papers_txt{padding-left:20px;position:absolute;left:0;bottom:0;z-index:2;}
+.papers_txt button{width:180px;display:flex;justify-content:space-between;align-items:center;padding:10px 20px;border:none;background:#000;;font-size:1.2rem;color:#fff;text-align:left;}
+/* .papers_txt button img{화살표} */
+.papers_txt h3{padding:20px 0;font-size:1.5rem;color:#333;line-height:2rem;}
+.papers_txt p{font-size:1.2rem;color:#666;}
+.papers_slide .papers_img{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:1;}
 .papers_slider .swiper-button-prev{left:3%;}
 .papers_slider .swiper-button-next{right:3%;}
-.papers_slider .swiper-button-prev::after,.swiper-button-next::after{font-size:3rem;}
+.papers_slider .swiper-button-prev::after,.swiper-button-next::after{font-size:5rem;color:#ccc;}
 .papers_slider .swiper-pagination{bottom:10%;}
 .papers_slider .swiper-pagination-bullets .swiper-pagination-bullet{width:18%;height:3px;margin:0;border-radius:0;}
 .papers_slider .swiper-pagination-bullet-active{background:#000;}
