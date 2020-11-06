@@ -87,7 +87,21 @@ var masterSlider = new Swiper('.main_slider',{
     type: 'bullets',
     clickable:true,
   },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  keyboard:true,
+  loop:true
 });
+
+var mainPag = $('.main_slider .swiper-pagination-bullets .swiper-pagination-bullet');
+mainPag[0].innerText='INSTER';
+mainPag[1].innerText='인쇄용지';
+mainPag[2].innerText='산업용지';
+mainPag[3].innerText='특수지';
+mainPag[4].innerText='감열지';
+
 var slaveSlider = new Swiper('.papers_slider');
 
 
