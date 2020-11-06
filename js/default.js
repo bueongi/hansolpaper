@@ -81,6 +81,7 @@ $('.main_nav>li').hover(function(){
   $(this).children('.sub_nav').css('left',navOffset);
 });
 
+//swiper slider
 var masterSlider = new Swiper('.main_slider',{
   pagination: {
     el: '.swiper-pagination',
@@ -102,7 +103,19 @@ mainPag[2].innerText='산업용지';
 mainPag[3].innerText='특수지';
 mainPag[4].innerText='감열지';
 
-var slaveSlider = new Swiper('.papers_slider');
+var slaveSlider = new Swiper('.papers_slider',{
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable:true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  keyboard:true,
+  loop:true
+});
 
 
 
