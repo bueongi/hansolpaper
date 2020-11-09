@@ -117,6 +117,11 @@ var slaveSlider = new Swiper('.papers_slider',{
   loop:true
 });
 
+// info_section a 태그
+$('.info_content a').on('click',function(){
+    return false;
+});
+
 
 
 
