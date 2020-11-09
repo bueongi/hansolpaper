@@ -175,7 +175,7 @@
   .lang{display:block;margin:0 0 0 16px;border:none;padding:0;order:3;}
   .lang a{padding-right:20px;font-weight:600;font-size:18px;color:#aaa;}
   .lang a:first-child{display:none;}
-  .lang a:last-child{display:block;width:30px;height:30px;margin-top:6px;padding:0;border-radius:15px;background:#888;font-size:0.8rem;text-align:center;line-height:30px;color:#fff;}
+  .lang a:last-child{display:block;width:30px;height:30px;margin-top:2px;padding:0;border-radius:15px;background:#888;font-size:0.8rem;text-align:center;line-height:30px;color:#fff;}
   .main_nav{order:1;}
   .sub_nav{transition:.3s;}
   .main_nav li:hover .sub_nav{display:block !important;}
